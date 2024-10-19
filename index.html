@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TV Series</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="tallertypescript.css">
+    <script type="module" src='./scripts/main.js'></script>
+</head>
+<body>
+    <div class="fondo">
+        <h1>TV Series</h1>
+    </div>
+   
+    <div class="container">
+        <div class="row">
+            <!-- Columna para la tabla de series -->
+            <div class="col-md-6">
+                <table class="table" id="series">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Channel</th>
+                            <th scope="col">Seasons</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <!-- Aquí se insertarán las series -->
+                    </tbody>
+                    <tfoot id="average-tbody">
+                        <tr class="average-row"></tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <!-- Columna para el detalle de la serie seleccionada -->
+            <div class="col-md-6">
+                <div id="series-detail" class="card" style="display: none;">
+                    <img id="serie-image" src="" alt="Series Image">
+                    <div class="card-body">
+                        <p id="series-description" class="card-text"></p>
+                        <a id="serie-url" href="#" class="card-link" target="_blank">Series Link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
